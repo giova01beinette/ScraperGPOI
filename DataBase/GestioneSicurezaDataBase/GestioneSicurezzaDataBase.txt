@@ -1,0 +1,8 @@
+Creato un database in mysql;
+Creato un utente e una password utilizzando il seguente codice:
+	CREATE USER 'admin5ainf'@'localhost' IDENTIFIED BY 'admin5ainf';
+	GRANT ALL PRIVILEGES ON 5ainf1920 . persona TO 'admin'@'localhost';
+Per testare l'effettivo accesso al database con le giuste credenziali,
+creato una pagina connection.php che esegue l'accesso data secondo le credenziali inserite;
+
+
