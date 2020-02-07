@@ -1,6 +1,6 @@
 # ScraperGPOI
 repository in cui caricheremo e commenteremo tutto il materiale che svilupperemo.
-Ogni volta che verranno aggiunti o modificati file si è invitati a <b>scrivere</b> anche un piccolo commento con la notifica delle ultime modifiche e la data in allegato come di seguito 
+Ogni volta che verranno aggiunti o modificati file si è invitati a <b>scrivere</b> anche un piccolo <b>commento</b> con la notifica delle ultime modifiche e la <b>data</b> in allegato come di seguito 
 
 07/02/2020
 Giova
