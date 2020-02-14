@@ -1,5 +1,6 @@
 # ScraperGPOI
-OBBLIGO DI SCRIVERE OGNI VOLTA COSA E' STATO FATTO
+OBBLIGO DI SCRIVERE OGNI VOLTA COSA E' STATO FATTO!
+
 IMPORTANTE: Quando modificate qualcosa e volete pubblicarlo, dovete cliccare 'Propose file change' e poi 'PULL REQUEST' così da inviare la richiesta di update che poi sarà accettata da Giova.
 
 repository in cui caricheremo e commenteremo tutto il materiale che svilupperemo.
@@ -13,6 +14,7 @@ Giova
 14/02/2020
 Gjokaj
 - fatta la versione base del database che contiene, per adesso, le tabelle prodotto, sito e linkScraper.
+- ho allegato il file sql nella cartella database
 
 
 
