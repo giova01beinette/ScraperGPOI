@@ -9,6 +9,10 @@ Giova
 - create cartelle in cui dovranno essere inseriti i file
 - inserito il file che spiega la progettazione del db e un altro in cui ci sono le istruzioni per creare il db
 
+14/02/2020
+Gjokaj
+- fatta la versione base del database che contiene, per adesso, le tabelle prodotto, sito e linkScraper.
+
 
 
 
