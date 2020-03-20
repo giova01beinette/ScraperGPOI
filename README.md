@@ -18,8 +18,7 @@ Gjokaj
 
 20/03/20
 Tutti presenti
-RIUNIONE per conversione delle features su trello e accordo per lo smart working
-
+- accordi per lo smart working
 
 
 
