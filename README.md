@@ -16,6 +16,9 @@ Gjokaj
 - fatta la versione base del database che contiene, per adesso, le tabelle prodotto, sito e linkScraper.
 - ho allegato il file sql nella cartella database
 
+20/03/20
+RIUNIONE per conversione delle features su trello e accordo per lo smart working
+
 
 
 
