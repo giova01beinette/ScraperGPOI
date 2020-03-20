@@ -1,6 +1,9 @@
 # ScraperGPOI
 OBBLIGO DI SCRIVERE OGNI VOLTA COSA E' STATO FATTO!
 
+link you tube Django tutorial
+https://www.youtube.com/watch?v=UmljXZIypDc&list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p
+
 IMPORTANTE: Quando modificate qualcosa e volete pubblicarlo, dovete cliccare 'Propose file change' e poi 'PULL REQUEST' così da inviare la richiesta di update che poi sarà accettata da Giova.
 
 repository in cui caricheremo e commenteremo tutto il materiale che svilupperemo.
