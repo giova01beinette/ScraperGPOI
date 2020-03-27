@@ -9,6 +9,9 @@ Giova
 - create cartelle in cui dovranno essere inseriti i file
 - inserito il file che spiega la progettazione del db e un altro in cui ci sono le istruzioni per creare il db
 
+27/03/2020 Giordano
+Aggiunto file scrapingEuronics.py, uno script in python che preleva le informazioni interessate dalla pagina di euronics e genera un file json con i risultati
+
 
 
 
