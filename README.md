@@ -4,6 +4,10 @@ Progetto scolastico ITIS mario delpozzo Cuneo, anno scolastico 2020
 # PRESENTAZIONE PROGETTO
 https://www.canva.com/design/DAD6txQBk1k/share/preview?token=h3KJIuJYpxPlZZQDQzeN0g&role=EDITOR&utm_content=DAD6txQBk1k&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton
 
+Bar down Char 
+
+https://docs.google.com/spreadsheets/d/1DKGAYDYotlm0EIb-mK-M7uHJJuQeIsMDEHIXvoqa73s/edit?usp=sharing
+
 # SUDDIVISIONE FEATURES E STORIES
 Database: Protezione DB: Scelta tecnologica, Progettazione DB, Implementazione DB;
 
