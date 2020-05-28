@@ -14,6 +14,7 @@ Giova
 - create cartelle in cui dovranno essere inseriti i file
 - inserito il file che spiega la progettazione del db e un altro in cui ci sono le istruzioni per creare il db
 
+
 14/02/2020
 Gjokaj
 - fatta la versione base del database che contiene, per adesso, le tabelle prodotto, sito e linkScraper.
@@ -23,6 +24,5 @@ Gjokaj
 Tutti presenti
 - accordi per lo smart working
 
-
-
-
+27/03/2020 Giordano
+- Aggiunto file scrapingEuronics.py, uno script in python che preleva le informazioni interessate dalla pagina di euronics e genera un file json con i risultati
