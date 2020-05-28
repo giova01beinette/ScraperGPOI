@@ -25,4 +25,5 @@ Tutti presenti
 - accordi per lo smart working
 
 27/03/2020 Giordano
+CIao ciao a tutti come s
 - Aggiunto file scrapingEuronics.py, uno script in python che preleva le informazioni interessate dalla pagina di euronics e genera un file json con i risultati
