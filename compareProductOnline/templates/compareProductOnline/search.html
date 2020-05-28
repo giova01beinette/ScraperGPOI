@@ -1,0 +1,52 @@
+{% extends 'compareProductOnline/base.html' %}
+
+{% block content %}
+
+    <header class="masthead bg-secondary text-white text-center" style="padding-top: 8rem; padding-bottom: 2rem">
+        <!-- Search form -->
+        <form class="form-inline d-flex justify-content-center md-form form-sm mt-0" action="search" method="get">
+          <i class="fas fa-search" aria-hidden="true"></i>
+          <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search"
+            aria-label="Search" name="product">
+
+        </form>
+        <h1 style="text-align: center">{{ search | title }}</h1>
+    </header>
+
+    <section class="page-section  portfolio">
+
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-3 ">
+                    {% for product in products %}
+                    <!-- Card -->
+                    <div class="col mb-3">
+                    <div class="card h-100">
+
+                    <!--Card image-->
+                    <div class="view overlay">
+                      <img class="card-img-top" src="{{ product.link_immagine }}"
+                        alt="Card image cap">
+                    </div>
+
+
+                    <!--Card content-->
+                    <div class="card-body ">
+                        <!--Brand-->
+                        <p class="card-text"><i class="fas fa-wrench"></i> {{ product.brand }}</p>
+                        <!--Descrizione prodotto-->
+                        <h4 class="card-title">{{ product.nome }}</h4>
+                    </div>
+
+                    <!-- Card footer -->
+                    <div class="card-footer" style="text-align: center">
+                        <p><i class="fas fa-money-bill-wave"></i> <h5>{{ product.prezzo }}</h5></p>
+                        <a href="{{ product.link_dettaglio }}"><button type="button" class="btn btn-primary btn-md">View More</button></a>
+                    </div>
+
+                    </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+    </section>
+{% endblock content %}
