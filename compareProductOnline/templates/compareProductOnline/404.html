@@ -3,7 +3,18 @@
 
 {% block content %}
 <link rel="stylesheet" href="{% static "css/404.css"%}">
-<section class="page_404 masthead text-center" style="padding-top: 18rem; padding-bottom: 10rem;">
+<header class="masthead bg-secondary text-white text-center" style="padding-top: 8rem; padding-bottom: 2rem">
+        <!-- Search form -->
+        <form class="form-inline d-flex justify-content-center md-form form-sm mt-0" action="search" method="get">
+          <i class="fas fa-search" aria-hidden="true"></i>
+          <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search"
+            aria-label="Search" name="product">
+
+        </form>
+        <h1 style="text-align: center">{{ search | title }}</h1>
+    </header>
+
+<section class="page_404 masthead text-center" style="padding-top: 5rem; padding-bottom: 5rem;">
 	<div class="container">
 		<div class="row">
             <div class="col-sm-12 ">
@@ -14,10 +25,10 @@
 
                     <div class="contant_box_404">
                         <h3 class="h2">
-                        Look like you're lost
+                        Sembra che ti sia perso
                         </h3>
 
-                        <p>the page you are looking for not available!</p>
+                        <p>La pagina che stai cercando non è disponibile. <br>Controlla la ricerca o effettuane una nuova</p>
 
                         <a href="{% url 'compatech-home'%}" class="btn btn-secondary text-white">Go to Home</a>
                     </div>

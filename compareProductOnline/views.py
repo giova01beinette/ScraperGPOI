@@ -11,22 +11,41 @@ def category(request):
     # lo prendo estraggo quacosa per quella
     # categoria e lo mostro
     categoria = request.GET.get('category')
+    ricerca = request.GET.get('product')
+    new = request.GET.get('new')
 
-    if categoria == None:
+    titleFrontend = ""
+    resultForFrontend = []
+
+    if categoria != None:
+
+        cat = Categorie.objects.filter(categoria_nome=categoria.lower().replace(" ", "%20")).first()
+        links = cat.links_set.all()
+        for l in links:
+            prods = Prodotti.objects.filter(link=l)[:10]
+            for prod in prods:
+                resultForFrontend.append(prod)
+        titleFrontend = categoria
+
+    # se è stato passato un valore di ricerca
+    if ricerca != None:
+        prodotti = Prodotti.objects.filter(nome__contains=ricerca)
+        if len(prodotti) == 0:
+            ricerca = None
+        titleFrontend = ricerca
+        resultForFrontend = prodotti
+
+    if new != None :
+        #se viene chiamata dalla barra di navigazione non ha senso dare errore è ovvio che si verifichi
+        #mostrosemplicemnte 10 prodotti e passo nel titolo immetti la ricerca
+        resultForFrontend = Prodotti.objects.all()[:15]
+        titleFrontend = "Anteprima dei prodotti"
+
+    data_to_frontend = {
+        'search': titleFrontend,
+        'products': resultForFrontend,
+    }
+    if ricerca == None and categoria == None and new == None:
         return render(request, 'compareProductOnline/404.html')
 
-    cat = Categorie.objects.filter(categoria_nome=categoria.lower().replace(" ","%20")).first()
-    print(cat)
-    links = cat.links_set.all()
-    result = []
-    for l in links:
-        prods = Prodotti.objects.filter(link=l)[:10]
-        for prod in prods:
-            result.append(prod)
-
-
-    stuff_to_frontend = {
-        'search': categoria,
-        'products': result,
-    }
-    return render(request, 'compareProductOnline/search.html', stuff_to_frontend)
+    return render(request, 'compareProductOnline/search.html', data_to_frontend)

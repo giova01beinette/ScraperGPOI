@@ -39,7 +39,8 @@
 
                     <!-- Card footer -->
                     <div class="card-footer" style="text-align: center">
-                        <p><i class="fas fa-money-bill-wave"></i> <h5>{{ product.prezzo }}</h5></p>
+                        {{ product.link.sito.sito_nome | title}}
+                        <p><i class="fas fa-shopping-bag"></i> <h5>{{ product.prezzo }}</h5></p>
                         <a href="{{ product.link_dettaglio }}"><button type="button" class="btn btn-primary btn-md">View More</button></a>
                     </div>
 
