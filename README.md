@@ -8,6 +8,10 @@ Bar down Char
 
 https://docs.google.com/spreadsheets/d/1DKGAYDYotlm0EIb-mK-M7uHJJuQeIsMDEHIXvoqa73s/edit?usp=sharing
 
+Canban Trello
+
+https://trello.com/b/qX7jrSNG/spider
+
 # SUDDIVISIONE FEATURES E STORIES
 Database: Protezione DB: Scelta tecnologica, Progettazione DB, Implementazione DB;
 
