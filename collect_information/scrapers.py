@@ -139,7 +139,7 @@ def scrape_eprice():
     lista_prodotti = []
 
     # avvio il driver indicando nell'executable_path il percorso sul mio pc del web engine di firefox "geckodriver", scaricabile da https://github.com/mozilla/geckodriver/releases
-    driver = webdriver.Firefox(executable_path= "../geckodriver.exe")
+    driver = webdriver.Firefox(executable_path= "/home/giovanni/Scrivania/PROGETTO_SCRUM/ScraperGPOI/collect_information/geckodriver")
 
     # ciclo per ogni categoria
     for i in range(0, len(lista_link)):
@@ -192,7 +192,7 @@ def scrape_unieuro():
     # lista che conterrà tutti i record ottenuti dallo scraping
     lista_prodotti = []
     # avvio il driver indicando nell'executable_path il percorso sul mio pc del web engine di firefox "geckodriver", scaricabile da https://github.com/mozilla/geckodriver/releases
-    driver = webdriver.Firefox(executable_path="../geckodriver.exe")                                           
+    driver = webdriver.Firefox(executable_path="/home/giovanni/Scrivania/PROGETTO_SCRUM/ScraperGPOI/collect_information/geckodriver")
     # ciclo per ogni categoria
     for i in range(0, len(lista_link)):
         link = lista_link[i].link
