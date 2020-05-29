@@ -48,13 +48,15 @@ TIPOLOGIA DI CLIENTELA
 La piattaforma è indirizzata a chiunque voglia effettuare un acquisto online e desideri avere un rapido riscontro tra le opportunità che offrono i diversi siti di e-commerce sul web.
 
 
-TECNOLOGIE UTILIZZATE 
+# TECNOLOGIE UTILIZZATE 
 
 Il sistema è composto da:
+
 • Front end: è la parte visibile dagli utenti e con la quale essi interagiscono.
 Nella piattaforma Compatech, il front end è una web app che permette ai clienti di ricercare prodotti e, per ognuna di queste, mostrarne il sito di provenienza e il relativo prezzo.
-• Back end: è la parte non visibile dagli utenti. Il back end si occupa di raccogliere i dati tramite l’algoritmo proprietario, andandoli a prelevare dai diversi siti, salvandoli su un database.
 
+• Back end: è la parte non visibile dagli utenti. Il back end si occupa di raccogliere i dati tramite l’algoritmo
+proprietario, andandoli a prelevare dai diversi siti, salvandoli su un database.
 Il codice riguardante il back end è sviluppato in linguaggio Python e gestito dal web framework Django. Il front end è sviluppato in linguaggio JavaScript, facendo uso del framework Bootstrap. Un framework è un’architettura logica di supporto su cui un software può essere progettato e realizzato, spesso facilitandone lo sviluppo da parte del programmatore.
 
 
@@ -85,15 +87,20 @@ PYTHON
 Python è un linguaggio pseudo-compilato, ciò significa che è presente un interprete,
 che si occupa di analizzare il codice sorgente e, se sintatticamente corretto, di eseguirlo.
 Python presenta numerose caratteristiche, tra cui le seguenti:
+
 • è un linguaggio ad alto livello molto semplice, potente e molto performante
 rispetto ad altri linguaggi interpretati;
+
 • è multi-paradigma, cioè supporta sia la programmazione procedurale, sia la
 programmazione ad oggetti, includendo funzionalità come l’ereditarietà singola,
 l’ereditarietà multipla e l’overloading degli operatori;
+
 • è portabile, infatti lo stesso programma può funzionare su piattaforma Linux,
 Mac o Windows purché vi sia installato un interprete compatibile;
+
 • è fornito di un’estesa libreria standard, ma è possibile installare numerose altre
 librerie create e mantenute dalla comunità.
+
 Un grande vantaggio di Python rispetto a altri linguaggi di progrmamazione più ostici, è la possibilità di usare IDLE, una shell interattiva che esegue le istruzioni in tempo reale (senza dover stare a compilare / lanciare di volta in volta uno script, come succede per altri linguaggi compilati).
 Ho utilizzato Python versione 3 per lo sviluppo dell’intero progetto. La scelta è ricaduta su Python anche per la sua incline predisposizione ad effettuare agoritmi di scraping, grazie ad esempio alla sua libreria Beautiful Soup. Inoltre, la possibilità di scoprire un nuovo linguaggio di programmazione così semplice e completo, considerato tra i migliori per lavori di questo tipo, non poteva lasciarci indifferenti. 
 
@@ -106,17 +113,24 @@ seguendo il paradigma “Model-Template-View”. Il progetto è sviluppato dalla
 Software Foundation”, è gratuito ed open source. Django fornisce un certo
 numero di funzionalità che facilitano il rapido sviluppo di applicazioni per la gestione
 di contenuti web, tra cui:
+
 • Astrazione del database e robusta API (Application Programming Interface) per
 gestirlo. Con API si intende un insieme di metodi di comunicazione chiaramente
 definiti tra componenti;
+
 • Possibilità di installare funzionalità tramite plugin, cioè programmi non autonomi
 che interagiscono con un altro programma per estenderne le funzioni;
+
 • Fornisce un’interfaccia amministrativa che permette di creare, aggiornare ed
 eliminare contenuti rappresentati da oggetti, tenendo traccia delle operazioni
 effettuate;
+
 • Gestore di URL (Uniform Resource Locator) basate su espressioni regolari;
+
 • Supporto per la localizzazione, incluse traduzioni dell’interfaccia amministrativa;
+
 • Sistema di gestione degli utenti e della loro autenticazione nell’applicazione web.
+
 Il web scraper è stato integrato in Django e il suo utilizzo è stato spontaneo, in quanto al suo interno include già una quantità enorme di strumenti pronti all’uso. In questo modo quando hai in mente un’idea per un’applicazione, non dovrai preoccuparti di molte cose in quanto Django se ne prenderà cura al tuo posto. Inoltre Django, al suo interno, include già tutte le funzionalità per la creazione di form, dell’impaginazione, della verificare che i dati inseriti dall’utente siano corretti, che i campi obbligatori siano stati inseriti, lasciando a noi solo la logica che sta dietro.
 
 
@@ -124,24 +138,6 @@ SQLITE
 
 SQLite è una libreria software scritta in linguaggio C che implementa un DBMS SQL di tipo ACID incorporabile all'interno di applicazioni. Un DBMS è un sistema software progettato per consentire la creazione, la manipolazione e l’interrogazione efficiente di database. Questo software è incluso in Python, perciò non c’è bisogno di installare nient’altro come supporto per il database.
 In SQLite vengono salvati tutti i dati dell’architettura esistente.
-
-
-PYCHARM
-
-PyCharm è un ambiente di sviluppo integrato (IDE), sviluppato da JetBrains c , usato
-nella programmazione in linguaggio Python. Fornisce l’analisi del codice, un debugger
-grafico, un tester integrato, l’integrazione con i sistemi di controllo versione e supporta
-lo sviluppo web con Django.14. Questo strumento è stato scelto per la potenza che offre, infatti con PyCharm è possibile gestire il controllo di versione e la macchina virtuale; inoltre, rispetto ad altri IDE, permette un’analisi del codice più avanzata.
-
-
-GITHUB
-
-GitHub è un servizio web di hosting per progetti software che usa il software di controllo
-di versione distribuito Git. Principalmente utilizzato dagli sviluppatori, che caricano il
-codice sorgente dei loro programmi per renderlo disponibile agli utenti. Quest’ultimi
-possono interagire con lo sviluppatore tramite pull request, commenti e un sistema di
-issue tracking per migliorare il codice, risolvendo bug, o aggiungendo funzionalità al
-prodotto.
 
 # LIBRERIE
 
@@ -172,7 +168,7 @@ accetta comandi e li invia al browser tramite driver specifici.
 Abbiamo scelto scelto questa libreria perché è open source e supporta diversi browser.
 
 
-PROGETTAZIONE E SVILUPPO
+# PROGETTAZIONE E SVILUPPO
 
 Il progetto si articola in due componenti: il componente di scraping e il componente compareProduct. Lo scraper si occupa della ricerca sul web di informazioni relative ai prodotti. 
 Il componente compareProduct consente di ricavare dal database i prodotti ottenuti grazie allo scraping. 
@@ -191,6 +187,26 @@ COMPARE PRODUCT
 All’interno della piattaforma, l’utente, dopo la ricerca di un prodotto, accede alla
 pagina contenente una lista del prodotto ricercato offerto dai diversi siti, con le relative informazioni. Si potrà cliccare su quello desiderato per recarsi sul sito di appartenenza del prodotto.
 
+# Softwere utilizzati per sviluppo e versioning control
+
+Qui di seguito vengono spegate le sclete fatte dal nostro gruppo per quanto riguarda IDE e softwere di versioning control, ovviamente il progettto è del tutto indipendente da questi. 
+
+PYCHARM
+
+PyCharm è un ambiente di sviluppo integrato (IDE), sviluppato da JetBrains c , usato
+nella programmazione in linguaggio Python. Fornisce l’analisi del codice, un debugger
+grafico, un tester integrato, l’integrazione con i sistemi di controllo versione e supporta
+lo sviluppo web con Django.14. Questo strumento è stato scelto per la potenza che offre, infatti con PyCharm è possibile gestire il controllo di versione e la macchina virtuale; inoltre, rispetto ad altri IDE, permette un’analisi del codice più avanzata.
+
+
+GITHUB
+
+GitHub è un servizio web di hosting per progetti software che usa il software di controllo
+di versione distribuito Git. Principalmente utilizzato dagli sviluppatori, che caricano il
+codice sorgente dei loro programmi per renderlo disponibile agli utenti. Quest’ultimi
+possono interagire con lo sviluppatore tramite pull request, commenti e un sistema di
+issue tracking per migliorare il codice, risolvendo bug, o aggiungendo funzionalità al
+prodotto.
 
 
 # SPIEGAZIONE STRUTTURA DATABASE TESTUALE e spezzone di codice 
@@ -238,9 +254,13 @@ link: stringa(100) link del sito da cui proviene il prodotto
 
 # COMUNICAZIONI DI LAVORO
 
+    0.1 INZIO PROGETTO, scelta delle stories, divisione infeatures, votazione delle priorità e delle tempistiche
+    0.2 GRUPPO: e scelta delle tecnologie
+    0.3 GIOVA: Creato il progetto e inziato  sviluppare due algoritmi che raccolgono informazioni da due siti, euronics e 
+    eprice
+    0.5  GRUPPO: Accordi presi via meet per continuare a svilppare il progetto da casa
     1. GIORDI : Ho aggiunto i due algoritmi di scraping dei siti unieuro e euronics, 
-    ma sono proprio solo l’algoritmo quindi sono ancora da inserire completamente nel progetto e da integrare con django 
-    
+    ma sono proprio solo l’algoritmo quindi sono ancora da inserire completamente nel progetto e da integrare con django     
     2. GIOVA: aggiunto un altro file con il link alla presentazione che ho iniziato a impostare e 
     che dobbiamo condividere per sabato con Tosello, non l’ho fatta con power point perché Canva 
     è un bello strumento, gratis e facilissimo da usare per fare presentazioni professionali, 
@@ -266,6 +286,7 @@ link: stringa(100) link del sito da cui proviene il prodotto
         7.2. romeo gjokay123
         7.3. andrea golegole123
         7.4. hafez elsayed123
+    7.1 GIOCK: creato applicazioe di interfaccia e inzio sviluppo template
     8. GIOVA: Ho creato il database ho già anche caricato le categorie e i siti con le rispettive funzionalità, 
     ho poi creto una funzione che crea dinamicamente i link, nella funzione home, non è quello  il posto giusto 
     ma poi troveremo una posizione più consona
@@ -277,5 +298,6 @@ link: stringa(100) link del sito da cui proviene il prodotto
     (tipo 3 minuti buoni) ma così decisamente di meno.
     12. GIOVA: creato un template e sistemato quasi tutta la parte grafica, aspetto che gjock consegni 
     la sua parte e poi finiamo, che martedì ha anche detto che interroga.
-    13. GIOVA: finito tutta la parte grafica, aspetto ancora che gjock faccia sto cazzo di form, 
+    13. GIOVA: finito tutta la parte grafica, aspetto ancora che gjock faccia il form, 
     aspetto ancora un po’ poi lo faccio io, Comunque la grafica adesso è tutta a posto, ho messo anche una pagina di errore 404
+    
